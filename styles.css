@@ -1,0 +1,79 @@
+.hidden {
+  display: none !important;
+}
+
+.header {
+  background-color: #008080;
+}
+
+.search {
+  margin: 1rem 0;
+  position: relative;
+}
+
+.searchBar {
+  border: none;
+  border-radius: 100px;
+  padding: .7rem 1.5rem;
+  width: 50rem;
+  transition-property: width;
+  transition-duration: 100ms;
+}
+
+.searchBar:focus {
+  outline: none;
+  width: 60rem;
+}
+
+.search-button {
+  border: none;
+  background: none;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: grey;
+  font-size: 1rem;
+}
+
+.inner-div {
+  border-bottom: 1px solid #008080;
+  width: 75%;
+}
+
+.search-prompt {
+  font-weight: 300;
+}
+
+.search-results-container {
+  margin-top: 1rem;
+}
+
+.search-results {
+  width: 80%;
+  margin: auto;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  border: 1px solid #008080;
+  margin: 1rem;
+  border-radius: 3px;
+  flex: 0 0 10rem;
+}
+
+.card-image {
+  padding: .5rem;
+}
+
+.card-title {
+  margin: 0.5rem 0;
+  padding: 0 0.5rem;
+}
+
+.card-title-text {
+  margin: 0;
+  font-size: .8rem;
+  font-weight: 700;
+  text-align: center;
+}
