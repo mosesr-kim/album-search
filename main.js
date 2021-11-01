@@ -14,7 +14,6 @@ function handleSearch(event) {
       $searchPrompt.textContent = `${resultCount} results for "${$form.elements[0].value}"`;
       $form.reset();
       $searchResults.innerHTML = '';
-      // console.log(results[0]);
       for (let i = 0; i < results.length; i++) {
         const card = createCard(results[i]);
         $searchResults.appendChild(card);
