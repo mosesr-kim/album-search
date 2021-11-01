@@ -15,10 +15,14 @@
   border: none;
   border-radius: 100px;
   padding: .7rem 1.5rem;
+  width: 50rem;
+  transition-property: width;
+  transition-duration: 100ms;
 }
 
 .searchBar:focus {
   outline: none;
+  width: 60rem;
 }
 
 .search-button {
