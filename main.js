@@ -6,7 +6,7 @@ $form.addEventListener('submit', handleSearch);
 
 function handleSearch(event) {
   event.preventDefault();
-  fetch(`https://itunes.apple.com/search?term=${$form.elements[0].value}&media=music&entity=album&attribute=artistTerm&limit=200`)
+  fetchJsonp(`https://itunes.apple.com/search?term=${$form.elements[0].value}&media=music&entity=album&attribute=artistTerm&limit=200`)
     .then(response => response.json())
     .then(data => {
       const resultCount = data.resultCount;
